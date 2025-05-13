@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasty Treats Bistro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff8f0;
+    }
+    header {
+      background-color: #ff6347;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    #header-img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    main {
+      padding: 30px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    article {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    article img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 8px;
+    }
+    form input, form textarea {
+      display: block;
+      margin-bottom: 15px;
+      padding: 8px;
+      width: 100%;
+      max-width: 300px;
+    }
+    form label {
+      margin-top: 10px;
+      display: block;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff6347;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img id="header-img" src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Restaurant Image">
+    <h1>Tasty Treats Bistro</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#order-form">Order Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Menu</h2>
+
+      <article>
+        <img src="/Creamy Alfredo Pasta.jpg" alt="Pasta">
+        <h3>Creamy Alfredo Pasta</h3>
+        <p>A rich and creamy pasta tossed with garlic, parmesan, and herbs. <em>$10.99</em></p>
+      </article>
+
+      <article>
+        <img src="/double cheese burger.jpg" alt="Burger">
+        <h3>Double Cheeseburger</h3>
+        <p>Grilled to perfection with melted cheese, lettuce, and tomato. <em>$8.49</em></p>
+      </article>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Salad">
+        <h3>Garden Fresh Salad</h3>
+        <p>A healthy mix of fresh greens, cherry tomatoes, cucumbers, and olives. <em>$6.99</em></p>
+      </article>
+    </section>
+
+    <section id="order-form">
+      <h2>Place Your Order</h2>
+      <form>
+        <label for="pasta-qty">Creamy Alfredo Pasta:</label>
+        <input type="number" id="pasta-qty" name="pasta-qty" min="0">
+
+        <label for="burger-qty">Double Cheeseburger:</label>
+        <input type="number" id="burger-qty" name="burger-qty" min="0">
+
+        <label for="salad-qty">Garden Fresh Salad:</label>
+        <input type="number" id="salad-qty" name="salad-qty" min="0">
+
+        <p><strong>Add-ons:</strong></p>
+        <label><input type="checkbox" name="addon" value="fries"> Add Fries</label>
+        <label><input type="checkbox" name="addon" value="drink"> Add Soft Drink</label>
+
+        <p><strong>Select Your Side:</strong></p>
+        <label><input type="radio" name="side" value="fries"> Fries</label>
+        <label><input type="radio" name="side" value="salad"> Small Salad</label>
+
+        <label for="special-requests">Special Requests:</label>
+        <textarea id="special-requests" name="special-requests" rows="4" cols="30" placeholder="Any specific instructions..."></textarea>
+
+        <input type="submit" value="Go To Checkout">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love by <strong>codedex_devika</strong></p>
+  </footer>
+
+</body>
+</html>
